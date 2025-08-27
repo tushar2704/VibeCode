@@ -1,14 +1,14 @@
 # 🤝 Contributing Guidelines & Community Standards
 
-> **VibeCode Project by [Tushar Aggarwal](https://www.linkedin.com/in/tusharaggarwalinseec/)** - *"Building an inclusive, collaborative community with Context Engineering principles"*
+> **VibeCode Project by [Tushar Aggarwal](https://www.linkedin.com/in/tusharaggarwalinseec/)** - *AI Global Community Leader & 5x Founder | "Building an inclusive, collaborative community with Context Engineering principles"*
 > 
-> 🔗 **Connect with the creator**: [LinkedIn](https://www.linkedin.com/in/tusharaggarwalinseec/) | Questions, suggestions, and collaboration welcome
+> 🔗 **Connect with the creator**: [LinkedIn](https://www.linkedin.com/in/tusharaggarwalinseec/) | AI innovation, startup insights, and collaboration opportunities
 
 ## 🎯 Overview
 
 This section establishes **Contributing Guidelines & Community Standards** for the VibeCode guide project. These guidelines ensure a welcoming, productive environment for all contributors while maintaining quality through Context Engineering methodology.
 
-**Project Creator**: [Tushar Aggarwal](https://www.linkedin.com/in/tusharaggarwalinseec/) - Connect for project vision, feedback, and collaboration opportunities.
+**Project Creator**: [Tushar Aggarwal](https://www.linkedin.com/in/tusharaggarwalinseec/) - AI Global Community Leader & 5x Founder
 
 ---
 
