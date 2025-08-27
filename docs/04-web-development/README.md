@@ -1,6 +1,8 @@
 # 🌐 Chapter 4: Web Development Excellence
 
-> *"Master frontend development across all major frameworks with Context Engineering precision"*
+> **By [Tushar Aggarwal](https://www.linkedin.com/in/tusharaggarwalinseec/)** - *"Master frontend development across all major frameworks with Context Engineering precision"*
+> 
+> 🔗 **Connect**: [LinkedIn](https://www.linkedin.com/in/tusharaggarwalinseec/) | Follow for web development insights and best practices
 
 ## Overview
 
@@ -419,3 +421,12 @@ npm install -D eslint prettier @typescript-eslint/parser
 ---
 
 *This section provides the foundation for modern web development with Context Engineering. Each subsection includes practical examples, templates, and real-world implementation strategies.*
+
+---
+
+## 👨‍💻 About the Author
+
+**Tushar Aggarwal** - Senior Software Engineer & Technical Lead  
+🔗 **Connect**: [LinkedIn](https://www.linkedin.com/in/tusharaggarwalinseec/) | Follow for web development insights and best practices
+
+**VibeCode** - Transforming web development through systematic Context Engineering methodology

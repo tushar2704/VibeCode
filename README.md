@@ -1,14 +1,20 @@
 # 🌊 VibeCode: The Ultimate Cross-Platform Development Guide
-## By [Tushar Aggarwal](https://www.linkedin.com/in/tusharaggarwalinseec/)
+
+### 🔗 Connect with me: [LinkedIn](https://www.linkedin.com/in/tusharaggarwalinseec/) | Follow for more development insights and updates
 > *Master the art of coding with flow, passion, and excellence across all platforms*
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/vibecode/guide)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/tusharaggarwalinseec/VibeCode)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Contributors](https://img.shields.io/badge/contributors-welcome-orange.svg)](CONTRIBUTING.md)
+[![LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-blue.svg)](https://www.linkedin.com/in/tusharaggarwalinseec/)
 
-## 🎯 What is Vibe Coding?
+## 🎯 What is VibeCode?
 
-**Vibe Coding** is more than just writing code—it's about cultivating a mindset and methodology that creates optimal developer experiences, builds exceptional software, and fosters continuous growth. This comprehensive guide covers strategies, best practices, and techniques for every major development platform and paradigm.
+> **Created by [Tushar Aggarwal](https://www.linkedin.com/in/tusharaggarwalinseec/)** - Connect for collaboration and development insights
+
+**VibeCode** is more than just writing code—it's about cultivating a mindset and methodology that creates optimal developer experiences, builds exceptional software, and fosters continuous growth. This comprehensive guide covers strategies, best practices, and techniques for every major development platform and paradigm.
+
+**Follow the creator**: [Tushar Aggarwal on LinkedIn](https://www.linkedin.com/in/tusharaggarwalinseec/) for latest updates and development insights.
 
 ## 🌟 Core Philosophy
 
@@ -220,6 +226,8 @@
 
 We welcome contributions from developers of all levels! Please read our [Contributing Guidelines](CONTRIBUTING.md) to get started.
 
+**Questions or suggestions?** Connect with [Tushar Aggarwal](https://www.linkedin.com/in/tusharaggarwalinseec/) on LinkedIn.
+
 ### Ways to Contribute
 - 📝 Improve documentation
 - 🐛 Report bugs and issues
@@ -233,10 +241,10 @@ This guide is actively maintained and continuously updated with the latest best 
 
 ## 📞 Support & Community
 
-- 💬 [Discord Community](https://discord.gg/vibecode)
-- 🐛 [Issue Tracker](https://github.com/vibecode/guide/issues)
-- 📧 [Email Support](mailto:support@vibecode.dev)
-- 🐦 [Twitter Updates](https://twitter.com/vibecode_dev)
+- 💬 Connect with creator: [Tushar Aggarwal on LinkedIn](https://www.linkedin.com/in/tusharaggarwalinseec/)
+- 🐛 [Issue Tracker](https://github.com/tusharaggarwalinseec/VibeCode/issues)
+- 📧 [Email Support](mailto:tushar.aggarwalinseec@gmail.com)
+- 🌐 [GitHub Repository](https://github.com/tusharaggarwalinseec/VibeCode)
 
 ## 📄 License
 
@@ -244,12 +252,23 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
+## 👨‍💻 About the Author
+
+**Tushar Aggarwal** - Senior Software Engineer & Technical Lead
+- 🔗 **LinkedIn**: [Connect with me](https://www.linkedin.com/in/tusharaggarwalinseec/)
+- 📚 **VibeCode Guide**: Comprehensive cross-platform development methodology
+- 🚀 **Expertise**: Full-stack development, cloud architecture, and team leadership
+
+*Follow for development insights, career advice, and technology updates*
+
+---
+
 <div align="center">
 
-**🌊 Start your Vibe Coding journey today!**
+**🌊 Start your VibeCode journey today!**
 
-[Get Started](docs/getting-started/README.md) | [Browse Docs](docs/TOC.md) | [Join Community](https://discord.gg/vibecode)
+[Get Started](docs/01-introduction/README.md) | [Browse Docs](docs/TOC.md) | [Connect with Author](https://www.linkedin.com/in/tusharaggarwalinseec/)
 
-*Made with ❤️ by the Vibe Coding Community*
+*Made with ❤️ by [Tushar Aggarwal](https://www.linkedin.com/in/tusharaggarwalinseec/) and the VibeCode Community*
 
 </div>

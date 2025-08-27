@@ -1,10 +1,14 @@
-# 📚 Vibe Coding: Complete Table of Contents
+# 📚 VibeCode: Complete Table of Contents
 
-> *The Ultimate Cross-Platform Development Guide with Context Engineering*
+> **By [Tushar Aggarwal](https://www.linkedin.com/in/tusharaggarwalinseec/)** - *The Ultimate Cross-Platform Development Guide with Context Engineering*
+> 
+> 🔗 **Connect**: [LinkedIn](https://www.linkedin.com/in/tusharaggarwalinseec/) | Follow for development insights and updates
 
 ## 🌊 Table of Contents Overview
 
-This comprehensive guide combines **Vibe Coding** philosophy with **Context Engineering** methodology to create a systematic approach to AI-assisted development across all platforms.
+This comprehensive guide combines **VibeCode** philosophy with **Context Engineering** methodology to create a systematic approach to AI-assisted development across all platforms.
+
+**Created by**: [Tushar Aggarwal](https://www.linkedin.com/in/tusharaggarwalinseec/) - Senior Software Engineer & Technical Lead
 
 ---
 
@@ -308,4 +312,13 @@ This comprehensive guide combines **Vibe Coding** philosophy with **Context Engi
 
 ---
 
+## 👨‍💻 About the Author
+
+**Tushar Aggarwal** - Senior Software Engineer & Technical Lead  
+🔗 **Connect**: [LinkedIn](https://www.linkedin.com/in/tusharaggarwalinseec/) | Follow for development insights and career advice
+
+---
+
 *This table of contents represents a living document that evolves with the development community's needs and emerging technologies.*
+
+**VibeCode** - Created with ❤️ by [Tushar Aggarwal](https://www.linkedin.com/in/tusharaggarwalinseec/)
