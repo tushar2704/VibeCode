@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "name": "vibecode-website",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "out"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1.html"
+    },
+    {
+      "src": "/docs/(.*)",
+      "dest": "/docs/$1.html"
+    }
+  ],
+  "trailingSlash": true,
+  "cleanUrls": false
+}

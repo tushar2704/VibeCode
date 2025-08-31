@@ -20,7 +20,7 @@ export interface SidebarItem {
 export const sidebarData: SidebarItem[] = [
   {
     title: "Getting Started",
-    href: "/getting-started",
+    href: "/docs/getting-started/overview",
     icon: BookOpen
   },
   {
@@ -28,15 +28,15 @@ export const sidebarData: SidebarItem[] = [
     items: [
       {
         title: "Introduction & Philosophy",
-        href: "/introduction"
+        href: "/docs/introduction/overview"
       },
       {
         title: "Context Engineering Fundamentals", 
-        href: "/context-engineering"
+        href: "/docs/context-engineering/overview"
       },
       {
         title: "AI-Assisted Development Workflow",
-        href: "/ai-workflow"
+        href: "/docs/ai-workflow/overview"
       }
     ]
   },
@@ -45,46 +45,46 @@ export const sidebarData: SidebarItem[] = [
     items: [
       {
         title: "Web Development Excellence",
-        href: "/web-development",
+        href: "/docs/web-development/overview",
         items: [
-          { title: "Frontend Development", href: "/web-development/frontend" },
-          { title: "Backend Development", href: "/web-development/backend" },
-          { title: "Full-Stack Integration", href: "/web-development/fullstack" }
+          { title: "Frontend Development", href: "/docs/web-development/frontend" },
+          { title: "Backend Development", href: "/docs/web-development/backend" },
+          { title: "Full-Stack Integration", href: "/docs/web-development/fullstack" }
         ]
       },
       {
         title: "Mobile Development Mastery", 
-        href: "/mobile-development",
+        href: "/docs/mobile-development/overview",
         items: [
-          { title: "Cross-Platform Development", href: "/mobile-development/cross-platform" },
-          { title: "Native Development", href: "/mobile-development/native" }
+          { title: "Cross-Platform Development", href: "/docs/mobile-development/cross-platform" },
+          { title: "Native Development", href: "/docs/mobile-development/native" }
         ]
       },
       {
         title: "Desktop Application Development",
-        href: "/desktop-development",
+        href: "/docs/desktop-development/overview",
         items: [
-          { title: "Cross-Platform Desktop", href: "/desktop-development/cross-platform" },
-          { title: "Native Desktop Development", href: "/desktop-development/native" }
+          { title: "Cross-Platform Desktop", href: "/docs/desktop-development/cross-platform" },
+          { title: "Native Desktop Development", href: "/docs/desktop-development/native" }
         ]
       },
       {
         title: "Cloud & DevOps Excellence",
-        href: "/cloud-devops",
+        href: "/docs/cloud-devops/overview",
         items: [
-          { title: "Cloud Platforms", href: "/cloud-devops/platforms" },
-          { title: "Containerization & Orchestration", href: "/cloud-devops/containers" },
-          { title: "CI/CD & Infrastructure", href: "/cloud-devops/cicd" }
+          { title: "Cloud Platforms", href: "/docs/cloud-devops/platforms" },
+          { title: "Containerization & Orchestration", href: "/docs/cloud-devops/containers" },
+          { title: "CI/CD & Infrastructure", href: "/docs/cloud-devops/cicd" }
         ]
       },
       {
         title: "Specialized Development Domains",
-        href: "/specialized",
+        href: "/docs/specialized/overview",
         items: [
-          { title: "Game Development", href: "/specialized/game-development" },
-          { title: "Data Science & AI", href: "/specialized/data-science-ai" },
-          { title: "Blockchain & Web3", href: "/specialized/blockchain-web3" },
-          { title: "IoT & Embedded Systems", href: "/specialized/iot-embedded" }
+          { title: "Game Development", href: "/docs/specialized/game-development" },
+          { title: "Data Science & AI", href: "/docs/specialized/data-science-ai" },
+          { title: "Blockchain & Web3", href: "/docs/specialized/blockchain-web3" },
+          { title: "IoT & Embedded Systems", href: "/docs/specialized/iot-embedded" }
         ]
       }
     ]
@@ -94,19 +94,19 @@ export const sidebarData: SidebarItem[] = [
     items: [
       {
         title: "Testing & Quality Assurance",
-        href: "/testing-qa"
+        href: "/docs/testing-qa/overview"
       },
       {
         title: "Performance Optimization",
-        href: "/performance"
+        href: "/docs/performance/overview"
       },
       {
         title: "Security Best Practices",
-        href: "/security"
+        href: "/docs/security/overview"
       },
       {
         title: "Architecture & Design Patterns",
-        href: "/architecture"
+        href: "/docs/architecture/overview"
       }
     ]
   },
@@ -115,15 +115,15 @@ export const sidebarData: SidebarItem[] = [
     items: [
       {
         title: "Version Control & Collaboration",
-        href: "/version-control"
+        href: "/docs/version-control/overview"
       },
       {
         title: "Tools & Environment Setup",
-        href: "/tools-environment"
+        href: "/docs/tools-environment/overview"
       },
       {
         title: "Debugging & Troubleshooting",
-        href: "/debugging"
+        href: "/docs/debugging/overview"
       }
     ]
   },
@@ -132,15 +132,15 @@ export const sidebarData: SidebarItem[] = [
     items: [
       {
         title: "Modern Development Paradigms",
-        href: "/advanced-topics"
+        href: "/docs/advanced-topics/overview"
       },
       {
         title: "Career Development",
-        href: "/career"
+        href: "/docs/career/overview"
       },
       {
         title: "Community & Resources",
-        href: "/community"
+        href: "/docs/community/overview"
       }
     ]
   }
@@ -148,9 +148,11 @@ export const sidebarData: SidebarItem[] = [
 
 interface BookSidebarProps {
   className?: string
+  currentSection?: string
+  currentDocument?: string
 }
 
-export function BookSidebar({ className }: BookSidebarProps) {
+export function BookSidebar({ className, currentSection, currentDocument }: BookSidebarProps) {
   return (
     <div className={cn("pb-12", className)}>
       <div className="space-y-4 py-4">
@@ -159,7 +161,12 @@ export function BookSidebar({ className }: BookSidebarProps) {
             <ScrollArea className="h-[calc(100vh-8rem)] px-1">
               <div className="space-y-2">
                 {sidebarData.map((item, index) => (
-                  <SidebarItem key={index} item={item} />
+                  <SidebarItem 
+                    key={index} 
+                    item={item} 
+                    currentSection={currentSection}
+                    currentDocument={currentDocument}
+                  />
                 ))}
               </div>
             </ScrollArea>
@@ -173,25 +180,45 @@ export function BookSidebar({ className }: BookSidebarProps) {
 interface SidebarItemProps {
   item: SidebarItem
   level?: number
+  currentSection?: string
+  currentDocument?: string
 }
 
-function SidebarItem({ item, level = 0 }: SidebarItemProps) {
+function SidebarItem({ item, level = 0, currentSection, currentDocument }: SidebarItemProps) {
   const pathname = usePathname()
-  const [isOpen, setIsOpen] = React.useState(() => {
-    if (item.items) {
-      return item.items.some(subItem => 
-        pathname === subItem.href || 
-        (subItem.items && subItem.items.some(subSubItem => pathname === subSubItem.href))
-      )
+  
+  // Check if this item or any of its children are active
+  const isDirectlyActive = pathname === item.href ||
+    (currentSection && currentDocument && item.href === `/docs/${currentSection}/${currentDocument}`) ||
+    (currentSection && item.href === `/docs/${currentSection}`)
+  
+  const hasActiveChild = React.useMemo(() => {
+    if (!item.items) return false
+    
+    const checkActive = (items: SidebarItem[]): boolean => {
+      return items.some(subItem => {
+        const subIsActive = pathname === subItem.href ||
+          (currentSection && currentDocument && subItem.href === `/docs/${currentSection}/${currentDocument}`) ||
+          (currentSection && subItem.href === `/docs/${currentSection}`)
+        
+        if (subIsActive) return true
+        if (subItem.items) return checkActive(subItem.items)
+        return false
+      })
     }
-    return false
-  })
-
-  const isActive = pathname === item.href
-  const hasActiveChild = item.items?.some(subItem => 
-    pathname === subItem.href || 
-    (subItem.items && subItem.items.some(subSubItem => pathname === subSubItem.href))
-  )
+    
+    return checkActive(item.items)
+  }, [item.items, pathname, currentSection, currentDocument])
+  
+  const isActive = isDirectlyActive
+  const shouldExpand = isActive || hasActiveChild
+  
+  const [isOpen, setIsOpen] = React.useState(() => shouldExpand)
+  
+  // Update expansion state when navigation changes
+  React.useEffect(() => {
+    setIsOpen(shouldExpand)
+  }, [shouldExpand])
 
   if (!item.items) {
     return (
@@ -238,7 +265,13 @@ function SidebarItem({ item, level = 0 }: SidebarItemProps) {
         </CollapsibleTrigger>
         <CollapsibleContent className="space-y-1">
           {item.items.map((subItem, index) => (
-            <SidebarItem key={index} item={subItem} level={level + 1} />
+            <SidebarItem 
+              key={index} 
+              item={subItem} 
+              level={level + 1} 
+              currentSection={currentSection}
+              currentDocument={currentDocument}
+            />
           ))}
         </CollapsibleContent>
       </Collapsible>

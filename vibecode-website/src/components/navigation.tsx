@@ -4,6 +4,7 @@ import * as React from "react"
 import Link from "next/link"
 import { useTheme } from "next-themes"
 import { Moon, Sun, Menu, BookOpen, Github, Linkedin, Monitor } from "lucide-react"
+import { SearchButton } from "@/components/search"
 
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
@@ -71,10 +72,8 @@ const platformItems = [
 ]
 
 export function Navigation() {
-  const { setTheme, theme, systemTheme } = useTheme()
+  const { setTheme, theme } = useTheme()
   const [isOpen, setIsOpen] = React.useState(false)
-
-  const currentTheme = theme === "system" ? systemTheme : theme
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -151,6 +150,7 @@ export function Navigation() {
             <Button
               variant="ghost"
               className="mr-2 px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden"
+              aria-label="Toggle navigation menu"
             >
               <Menu className="h-5 w-5" />
               <span className="sr-only">Toggle Menu</span>
@@ -168,6 +168,9 @@ export function Navigation() {
             </Link>
           </div>
           <nav className="flex items-center space-x-1">
+            <div className="hidden md:block">
+              <SearchButton />
+            </div>
             <Button variant="ghost" size="icon" asChild>
               <Link href="https://github.com/tusharaggarwalinseec/VibeCode" target="_blank">
                 <Github className="h-4 w-4" />
@@ -186,6 +189,7 @@ export function Navigation() {
                   variant="ghost"
                   size="icon"
                   className="relative"
+                  aria-label="Toggle theme menu"
                 >
                   <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
                   <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />

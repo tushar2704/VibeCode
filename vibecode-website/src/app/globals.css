@@ -168,7 +168,226 @@
     @apply bg-muted px-1.5 py-0.5 rounded text-sm font-mono;
   }
   
+  pre {
+    @apply bg-muted border rounded-lg p-4 overflow-x-auto;
+  }
+  
   pre code {
-    @apply bg-transparent p-0;
+    @apply bg-transparent p-0 text-sm;
+  }
+  
+  /* Syntax highlighting for code blocks */
+  .hljs {
+    @apply bg-transparent;
+  }
+  
+  /* Prose styling for documentation */
+  .prose {
+    @apply text-foreground;
+  }
+  
+  .prose h1,
+  .prose h2,
+  .prose h3,
+  .prose h4,
+  .prose h5,
+  .prose h6 {
+    @apply text-foreground font-semibold;
+    scroll-margin-top: 100px;
+  }
+  
+  .prose p {
+    @apply text-foreground/90;
+  }
+  
+  .prose a {
+    @apply text-primary hover:text-primary/80 no-underline font-medium;
+  }
+  
+  .prose strong {
+    @apply text-foreground font-semibold;
+  }
+  
+  .prose blockquote {
+    @apply border-l-primary bg-muted/50 text-foreground/90;
+  }
+  
+  .prose ul,
+  .prose ol {
+    @apply text-foreground/90;
+  }
+  
+  .prose table {
+    @apply border-border;
+  }
+  
+  .prose th,
+  .prose td {
+    @apply border-border;
+  }
+  
+  .prose th {
+    @apply bg-muted text-foreground;
+  }
+}
+
+/* Print Styles */
+@media print {
+  /* Hide non-essential elements */
+  header,
+  nav,
+  aside,
+  footer,
+  .sidebar,
+  .navigation,
+  .search-button,
+  .theme-toggle,
+  .page-navigation,
+  .reading-progress,
+  .copy-button,
+  .toc-toggle,
+  button {
+    display: none !important;
+  }
+  
+  /* Reset colors for print */
+  * {
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  
+  /* Optimize layout for print */
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style headings for print */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  h1 {
+    font-size: 18pt;
+    border-bottom: 2px solid black;
+    padding-bottom: 0.2em;
+  }
+  
+  h2 {
+    font-size: 16pt;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.1em;
+  }
+  
+  h3 {
+    font-size: 14pt;
+  }
+  
+  /* Code blocks for print */
+  pre, code {
+    background: #f5f5f5 !important;
+    border: 1px solid #ddd !important;
+    padding: 0.2em !important;
+    font-family: 'Courier New', monospace;
+    font-size: 10pt;
+    page-break-inside: avoid;
+  }
+  
+  pre {
+    padding: 1em !important;
+    margin: 1em 0;
+    overflow: visible;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  /* Links for print */
+  a {
+    color: black !important;
+    text-decoration: underline;
+  }
+  
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #666;
+  }
+  
+  /* Tables for print */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 0.3em;
+    text-align: left;
+  }
+  
+  th {
+    background: #f0f0f0 !important;
+    font-weight: bold;
+  }
+  
+  /* Images for print */
+  img {
+    max-width: 100%;
+    height: auto;
+    page-break-inside: avoid;
+  }
+  
+  /* Blockquotes for print */
+  blockquote {
+    border-left: 3px solid #ddd;
+    margin: 1em 0;
+    padding-left: 1em;
+    font-style: italic;
+  }
+  
+  /* Lists for print */
+  ul, ol {
+    margin: 1em 0;
+    padding-left: 2em;
+  }
+  
+  li {
+    margin: 0.3em 0;
+  }
+  
+  /* Page breaks */
+  .page-break {
+    page-break-before: always;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+  
+  /* Article content */
+  article {
+    max-width: none;
+    margin: 0;
+    padding: 1em;
+  }
+  
+  /* Breadcrumbs for print */
+  .breadcrumbs {
+    font-size: 10pt;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5em;
   }
 }
