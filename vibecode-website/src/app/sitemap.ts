@@ -1,5 +1,7 @@
 import { getAllDocumentSlugs } from '@/lib/content'
 
+export const dynamic = 'force-static'
+
 export default function sitemap() {
   const baseUrl = 'https://vibecode.dev' // Replace with your actual domain
   

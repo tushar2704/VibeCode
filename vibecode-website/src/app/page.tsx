@@ -1,4 +1,4 @@
-import Link from "next/link"
+import NextLink from "next/link"
 import { ArrowRight, BookOpen, Zap, Globe, Code, Github, Linkedin } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -28,27 +28,27 @@ export default function Home() {
             </p>
             <div className="space-x-4">
               <Button size="lg" asChild>
-                <Link href="/getting-started">
+                <NextLink href="/docs/getting-started/overview">
                   Get Started
                   <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
+                </NextLink>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <Link href="/introduction">
+                <NextLink href="/docs/01-introduction/overview">
                   Learn More
-                </Link>
+                </NextLink>
               </Button>
             </div>
             <div className="flex items-center space-x-4 text-sm text-muted-foreground">
               <span>Created by</span>
-              <Link 
+              <NextLink 
                 href="https://www.linkedin.com/in/tusharaggarwalinseec/" 
                 target="_blank"
                 className="flex items-center space-x-2 hover:text-foreground transition-colors"
               >
                 <Linkedin className="h-4 w-4" />
                 <span className="font-medium">Tushar Aggarwal</span>
-              </Link>
+              </NextLink>
               <Badge variant="secondary">AI Global Community Leader</Badge>
             </div>
           </div>
@@ -94,7 +94,7 @@ export default function Home() {
                   <CardTitle className="text-xl">Platform-Native Mastery</CardTitle>
                 </div>
                 <CardDescription>
-                  Deep expertise in each platform's unique characteristics, patterns, and optimization techniques.
+                  Deep expertise in each platform&apos;s unique characteristics, patterns, and optimization techniques.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -174,7 +174,7 @@ export default function Home() {
             </p>
           </div>
           <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-4">
-            <Link href="/web-development" className="group">
+            <NextLink href="/docs/04-web-development/overview" className="group">
               <Card className="transition-all hover:shadow-md group-hover:border-primary">
                 <CardHeader className="text-center">
                   <CardTitle className="text-lg">Web Development</CardTitle>
@@ -183,8 +183,8 @@ export default function Home() {
                   </CardDescription>
                 </CardHeader>
               </Card>
-            </Link>
-            <Link href="/mobile-development" className="group">
+            </NextLink>
+            <NextLink href="/docs/05-mobile-development/overview" className="group">
               <Card className="transition-all hover:shadow-md group-hover:border-primary">
                 <CardHeader className="text-center">
                   <CardTitle className="text-lg">Mobile Development</CardTitle>
@@ -193,8 +193,8 @@ export default function Home() {
                   </CardDescription>
                 </CardHeader>
               </Card>
-            </Link>
-            <Link href="/desktop-development" className="group">
+            </NextLink>
+            <NextLink href="/docs/06-desktop-development/overview" className="group">
               <Card className="transition-all hover:shadow-md group-hover:border-primary">
                 <CardHeader className="text-center">
                   <CardTitle className="text-lg">Desktop Apps</CardTitle>
@@ -203,8 +203,8 @@ export default function Home() {
                   </CardDescription>
                 </CardHeader>
               </Card>
-            </Link>
-            <Link href="/cloud-devops" className="group">
+            </NextLink>
+            <NextLink href="/docs/07-cloud-devops/overview" className="group">
               <Card className="transition-all hover:shadow-md group-hover:border-primary">
                 <CardHeader className="text-center">
                   <CardTitle className="text-lg">Cloud & DevOps</CardTitle>
@@ -213,7 +213,7 @@ export default function Home() {
                   </CardDescription>
                 </CardHeader>
               </Card>
-            </Link>
+            </NextLink>
           </div>
         </section>
 
@@ -228,16 +228,16 @@ export default function Home() {
             </p>
             <div className="space-x-4">
               <Button size="lg" asChild>
-                <Link href="/getting-started">
+                <NextLink href="/docs/getting-started/overview">
                   Get Started Now
                   <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
+                </NextLink>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <Link href="https://github.com/tusharaggarwalinseec/VibeCode" target="_blank">
+                <NextLink href="https://github.com/tusharaggarwalinseec/VibeCode" target="_blank">
                   <Github className="mr-2 h-4 w-4" />
                   View on GitHub
-                </Link>
+                </NextLink>
               </Button>
             </div>
           </div>

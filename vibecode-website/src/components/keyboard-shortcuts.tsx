@@ -18,6 +18,36 @@ const keyboardShortcuts: KeyboardShortcut[] = [
     context: "Global"
   },
   {
+    keys: ["Ctrl", "B"],
+    description: "Toggle bookmarks panel",
+    context: "Global"
+  },
+  {
+    keys: ["Alt", "H"],
+    description: "Go to homepage",
+    context: "Navigation"
+  },
+  {
+    keys: ["Alt", "T"],
+    description: "Toggle theme (dark/light)",
+    context: "Global"
+  },
+  {
+    keys: ["Alt", "M"],
+    description: "Toggle mobile menu",
+    context: "Mobile"
+  },
+  {
+    keys: ["?"],
+    description: "Show keyboard shortcuts",
+    context: "Help"
+  },
+  {
+    keys: ["F1"],
+    description: "Show help dialog",
+    context: "Help"
+  },
+  {
     keys: ["Esc"],
     description: "Close dialog or modal",
     context: "Global"
@@ -34,8 +64,8 @@ const keyboardShortcuts: KeyboardShortcut[] = [
   },
   {
     keys: ["↑", "↓"],
-    description: "Navigate search results",
-    context: "Search"
+    description: "Navigate search results or sidebar links",
+    context: "Navigation"
   },
   {
     keys: ["Enter"],

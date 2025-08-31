@@ -9,6 +9,7 @@ import { TableOfContents } from "@/components/table-of-contents"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import { ReadingProgress } from "@/components/reading-progress"
 import { PageNavigation } from "@/components/page-navigation"
+import { BookmarkManager } from "@/components/bookmark-manager"
 
 interface DocumentContentProps {
   doc: DocContent
@@ -23,9 +24,19 @@ export function DocumentContent({
   section, 
   document 
 }: DocumentContentProps) {
+  const currentPage = React.useMemo(() => ({
+    title: doc.frontMatter.title,
+    description: doc.frontMatter.description,
+    section,
+    document,
+    url: `/docs/${section}/${document}`,
+    tags: doc.frontMatter.tags
+  }), [doc.frontMatter, section, document])
+
   return (
     <>
       <ReadingProgress />
+      <BookmarkManager currentPage={currentPage} />
       <div className="mx-auto max-w-6xl">
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_250px] gap-8">
         <main className="min-w-0">
